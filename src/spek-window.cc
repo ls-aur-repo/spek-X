@@ -28,6 +28,7 @@ BEGIN_EVENT_TABLE(SpekWindow, wxFrame)
     EVT_MENU(wxID_HELP, SpekWindow::on_help)
     EVT_MENU(wxID_ABOUT, SpekWindow::on_about)
     EVT_COMMAND(-1, SPEK_NOTIFY_EVENT, SpekWindow::on_notify)
+    EVT_MENU(wxID_CLOSE, SpekWindow::on_exit)
 END_EVENT_TABLE()
 
 #ifdef SPEK_CHECK_VERSION
@@ -146,6 +147,12 @@ SpekWindow::SpekWindow(int width, int height, const wxString& path, const wxStri
     }
 
     SetDropTarget(new SpekDropTarget(this));
+
+    // Exit on Escape
+    wxAcceleratorEntry entries;
+    entries.Set(wxACCEL_NORMAL, WXK_ESCAPE, wxID_CLOSE);
+    wxAcceleratorTable accel(1, &entries);
+    SetAcceleratorTable(accel);
 
     SetSizer(sizer);
 
