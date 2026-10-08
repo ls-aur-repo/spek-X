@@ -13,7 +13,7 @@ Spek is available on *BSD, GNU/Linux, Windows and macOS.
 
 Find out more about Spek on its website: <http://spek.cc/>
 
-## 🚀 Ludvick Fork Features
+## 🚀 Ludvick (ls-aur-repo) Fork Features
 
 Unlike the upstream repository, this custom fork includes the following improvements:
 
