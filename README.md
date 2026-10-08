@@ -13,6 +13,12 @@ Spek is available on *BSD, GNU/Linux, Windows and macOS.
 
 Find out more about Spek on its website: <http://spek.cc/>
 
+## 🚀 Ludvick Fork Features
+
+Unlike the upstream repository, this custom fork includes the following improvements:
+
+* **Close with Esc:** Added a keyboard shortcut that allows you to instantly close the Spek-X window by pressing the `[Esc]` key.
+
 <img src="./data/spek-screenshot.png" height="500">
 
 ## Spek-X 0.9.4 - 2025/2/6
